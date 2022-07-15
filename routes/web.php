@@ -46,3 +46,6 @@ Route::get('/login', function () {return view('users.login');
 });     
 Route::post('/login',[UserController::class,'Login']);
 Route::get('/logout',[UserController::class,'Logout']);
+
+//Cart
+Route::get('add-to-cart/{id}', [PageController::class, 'getAddToCart'])->name('themgiohang');
